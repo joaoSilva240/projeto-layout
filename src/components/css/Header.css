@@ -1,0 +1,30 @@
+.teams--content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu--content{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    & ul{
+        display: flex;
+        gap: 10px;
+
+        & li{
+            list-style: none;
+
+            & a{
+                text-decoration: none;
+                color: #111;
+            }
+        }
+    }
+}
+

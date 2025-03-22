@@ -1,0 +1,22 @@
+.user--icon{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: -15px;
+    overflow: hidden;
+    border: 3px solid;
+
+    & h1{
+        color: #fefefe;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.user--icon img{
+    border-radius: 50%;
+}

@@ -16,7 +16,7 @@ const CardProjetos = (props) => {
                     <h1>{props.t_status}</h1>
                 </div>
                 <div className="projeto--status">
-                    
+                {/* adicionar status personalizado */}
                 </div>
                 <div className="projeto--title">
                     <h1>

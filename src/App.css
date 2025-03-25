@@ -2,13 +2,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ;
+  background-color:#fcfcfc ;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 70vw;
 }
 
 .header{

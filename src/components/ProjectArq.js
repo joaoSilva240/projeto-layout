@@ -2,19 +2,21 @@ import React from "react";
 import './css/ProjectArq.css'
 
 const bgIconColor = {
-    PDF:   '#EC7F74',
-    MP4:   '#7DD0D7',
-    WAV:   '#9FCC6A',
+    // alterar estrutura para "PDF" por exemplo, possuir dois valores, de cor e a svg relativa
+    PDF: '#EC7F74',
+    MP4: '#7DD0D7',
+    WAV: '#9FCC6A',
     FILES: '#FCD04F',
-    PNG:   '#7AA9F7'
+    PNG: '#7AA9F7'
 }
 
 const ProjectArq = (props) => {
-    return(
+    return (
         <div className="container--arq">
             <div className="arq--icon">
                 <div className="icon" style={
-                    {backgroundColor: bgIconColor[props.arqType]}
+                    // adicionar aqui a svg dinamicamente
+                    { backgroundColor: bgIconColor[props.arqType] }
                 }></div>
             </div>
             <div className="arq--desc">
@@ -23,11 +25,11 @@ const ProjectArq = (props) => {
             </div>
             <div className="arq--type">
                 <h1 style={
-                    {color: bgIconColor[props.arqType]}
+                    { color: bgIconColor[props.arqType] }
                 }>{props.arqType}</h1>
             </div>
             <div className="arq--dwld">
-                <span>DW</span>
+                {/* colocar svg padrão de download */}
             </div>
         </div>
     )

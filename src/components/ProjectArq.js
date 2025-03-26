@@ -1,5 +1,6 @@
 import React from "react";
 import './css/ProjectArq.css'
+import Download from './Icons/Download'
 
 const bgIconColor = {
     // alterar estrutura para "PDF" por exemplo, possuir dois valores, de cor e a svg relativa
@@ -29,7 +30,7 @@ const ProjectArq = (props) => {
                 }>{props.arqType}</h1>
             </div>
             <div className="arq--dwld">
-                {/* colocar svg padrão de download */}
+            <Download/>
             </div>
         </div>
     )

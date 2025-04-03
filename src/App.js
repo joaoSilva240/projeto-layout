@@ -2,6 +2,7 @@ import './App.css';
 import CardProjetos from './components/CardProjetos';
 import Header from './components/Header';
 import ProjectArq from './components/ProjectArq';
+import { arquivos } from './database/db';
 
 function App() {
   return (
@@ -19,11 +20,10 @@ function App() {
       <div className='section--main'>
         <div className='section--arqv'>
           {/* adicionar arquivos de forma dinâmica */}
-          <ProjectArq arqType='PDF' title="PDTI - Plano de Ação" data="24/02/2025"/>
-          <ProjectArq arqType='MP4' title="PDTI - Plano de Ação" data="24/02/2025"/>
-          <ProjectArq arqType='WAV' title="PDTI - Plano de Ação" data="24/02/2025"/>
-          <ProjectArq arqType='FILES' title="PDTI - Plano de Ação" data="24/02/2025"/>
-          <ProjectArq arqType='PNG' title="PDTI - Plano de Ação" data="24/02/2025"/>
+          {arquivos.map((arquivo)=>(
+          <ProjectArq arqType={arquivo.tipo} title={arquivo.titulo} data={arquivo.data}/>
+          ))}
+
         </div>
         <div className='section--clnd'></div>
         {/* Criar o calendário interativo */}
